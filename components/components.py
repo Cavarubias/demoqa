@@ -20,3 +20,9 @@ class WebElement:
             return False
         return True
 
+    def get_text(self):
+        if str(self.find_element().text) == '© 2013-2020 TOOLSQA.COM | ALL RIGHTS RESERVED.' or 'Please select an item from left to start practice.':
+            return True
+        else:
+            return False
+

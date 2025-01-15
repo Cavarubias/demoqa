@@ -1,4 +1,3 @@
-from selenium.common.exceptions import NoSuchElementException
 from pages.base_page import BasePage
 from components.components import WebElement
 
@@ -11,5 +10,8 @@ class DemoQa(BasePage):
 
         self.icon = WebElement(driver, '#app > header > a')
         self.button_element = WebElement(driver, '#app > div > div > div.home-body > div > div:nth-child(1)')
+        self.text = WebElement(driver, 'div > footer > span')
+#        self.button_elements = WebElement(driver, '#app > div > div > div(2) > div > div(1)')
+
 
 
