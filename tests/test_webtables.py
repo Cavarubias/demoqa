@@ -57,9 +57,7 @@ def test_table_pages(browser):
 
     page_tables.btn_rows_qty.click()
     page_tables.option_5_rows.click()
-    # assert not page_tables.btn_next.click()
     page_tables.btn_next.get_dom_attribute('disabled')
-    # assert not page_tables.btn_previous.click()
     page_tables.btn_previous.get_dom_attribute('disabled')
 
     for i in range(3):
