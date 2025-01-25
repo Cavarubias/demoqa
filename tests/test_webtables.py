@@ -1,5 +1,4 @@
 from pages.tables import Tables
-#import allure
 import time
 
 def test_tables(browser):

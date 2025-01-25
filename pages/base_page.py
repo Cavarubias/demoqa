@@ -1,6 +1,6 @@
 import logging
 from components.components import WebElement
-
+import requests
 
 class BasePage:
 
@@ -39,4 +39,9 @@ class BasePage:
         except Exception as ex:
             logging.log(1, ex)
             return False
+
+    def get_page_status(self):
+        response = requests.get(self.base_url)
+        return response.status_code
+
 
